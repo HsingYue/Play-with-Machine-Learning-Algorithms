@@ -21,7 +21,7 @@ class KNNClassifier:
 
         self._X_train = X_train
         self._y_train = y_train
-        return self
+        return self  # Skilearn一般都要加上这句
 
     def predict(self, X_predict):
         """给定待预测数据集X_predict，返回表示X_predict的结果向量"""
