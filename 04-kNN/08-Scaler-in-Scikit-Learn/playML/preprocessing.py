@@ -8,7 +8,7 @@ class StandardScaler:
         self.scale_ = None
 
     def fit(self, X):
-        """根据训练数据集X获得数据的均值和方差"""
+        """根据训练数据集X获得数据的均值和方差，这里的X限定为2维"""
         assert X.ndim == 2, "The dimension of X must be 2"
 
         self.mean_ = np.array([np.mean(X[:,i]) for i in range(X.shape[1])])
